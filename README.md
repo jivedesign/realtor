@@ -12,6 +12,10 @@ This is the take home assignment submission to create Earthquake Zen Garden. It 
 
 In the project directory, you can run:
 
+### `npm install`
+
+Will install the dependancies that are necessary to run the app.
+
 ### `npm run start`
 
 Will build and open the app at [http://localhost:8080](http://localhost:8080) in the browser.
