@@ -21,35 +21,35 @@ const DetailTable = styled.table`
 
 const DetailView = props => {
   const { detailedData } = props;
-  console.log('-- DETA', detailedData)
+
   return (<DetailViewContainer>
     <DetailBody>
-      <DetailTitle>{detailedData.properties.title}</DetailTitle>
+      <DetailTitle>{detailedData.title}</DetailTitle>
       <DetailTable>
         <tbody>
           <tr>
             <td>Title</td>
-            <td>{detailedData.properties.title}</td>
+            <td>{detailedData.title}</td>
           </tr>
           <tr>
             <td>Magnitude</td>
-            <td>{detailedData.properties.mag}</td>
+            <td>{detailedData.mag}</td>
           </tr>
           <tr>
             <td>Time</td>
-            <td>{detailedData.properties.time}</td>
+            <td>{detailedData.dateTime}</td>
           </tr>
           <tr>
             <td>Status</td>
-            <td>{detailedData.properties.status}</td>
+            <td>{detailedData.status}</td>
           </tr>
           <tr>
             <td>Tsunami</td>
-            <td>{detailedData.properties.tsunami}</td>
+            <td>{detailedData.tsunami}</td>
           </tr>
           <tr>
             <td>type</td>
-            <td>{detailedData.properties.type}</td>
+            <td>{detailedData.type}</td>
           </tr>
         </tbody>
       </DetailTable>

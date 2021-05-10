@@ -38,7 +38,6 @@ const Container = (props) => {
   }
 
   const getCurrentView = useCallback(() => {
-    console.log('PRO', data)
     switch(currentView) {
       case VIEWS.PROFILE:
         return <ProfileView profile={profile} />;
@@ -55,7 +54,6 @@ const Container = (props) => {
     <Header
       site={site}
       profile={profile}
-      onClick={() => {console.log("SADkjh")}}
       onLogoClick={() => handleChangeView(VIEWS.HOME)}
       onProfileClick={() => handleChangeView(VIEWS.PROFILE)}
     />
