@@ -6,6 +6,8 @@ const HomeViewContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  width: 800px;
+  margin: 0 auto;
 `;
 
 const HomeTitle = styled.h2`
@@ -18,6 +20,12 @@ const DetailLink = styled.a`
 
   &:visited {
     color: #6600cc;
+  }
+`;
+
+const DetailsTable = styled.table`
+  & td {
+    text-align: center;
   }
 `;
 
@@ -109,7 +117,7 @@ const HomeView = (props) => {
 
   return (<HomeViewContainer>
     <HomeTitle>{data.metadata.title}</HomeTitle>
-    <table>
+    <DetailsTable>
       <thead>
         <tr>
           <TableHeader onClick={() => handleSortData("title")}>Title</TableHeader>
@@ -120,7 +128,7 @@ const HomeView = (props) => {
       <tbody>
         {getTableRows()}
       </tbody>
-    </table>
+    </DetailsTable>
     </HomeViewContainer>);
 }
 
